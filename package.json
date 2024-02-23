@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "express-session": "^1.17.3",
+    "express-ws": "^5.0.2",
+    "mongoose": "^7.6.3",
+    "morgan": "^1.10.0",
+    "passport": "^0.7.0",
+    "passport-json": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "pws2023",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "homepage": "https://gitlab.com/mariusz.jarocki/pws2023"
+}
