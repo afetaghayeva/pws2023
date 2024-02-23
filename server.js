@@ -18,6 +18,7 @@ const auth = require('./auth')
 const websocket = require('./websocket')
 const person = require('./person')
 const project = require('./project')
+const task = require('./task')
 
 let config = {}
 try {
@@ -76,6 +77,11 @@ app.get('/project', project.get)
 app.post('/project', auth.checkIfInRole([ 1 ]), project.post)
 app.put('/project', auth.checkIfInRole([ 1 ]), project.put)
 app.delete('/project', auth.checkIfInRole([ 1 ]), project.delete)
+
+app.get('/task', task.get)
+app.post('/task', auth.checkIfInRole([ 1 ]), task.post)
+app.put('/task', auth.checkIfInRole([ 1 ]), task.put)
+app.delete('/task', auth.checkIfInRole([ 1 ]), task.delete)
 
 // websockets handling
 const wsInstance = expressWs(app)
